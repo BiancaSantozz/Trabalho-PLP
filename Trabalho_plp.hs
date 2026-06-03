@@ -8,8 +8,6 @@ José Geraldo Caria da Silva - 202410188
 ========================================
 -}
 
-module Trabalho_plp where
-
 -- ===== Exercício 2 ===== --
 
 insere_no_fim :: t -> [t] -> [t]
@@ -45,8 +43,10 @@ Variancia = média dos quadrados − (média)² --}
 -- Funções auxiliares para calcular a variância --
 soma [] = 0
 soma (c:r) = c + soma r
+
 tamanho [] = 0
 tamanho (c:r) = 1 + tamanho r
+
 quadrados [] = []
 quadrados (c:r) = (c * c) : quadrados r
 
@@ -74,8 +74,3 @@ subtrai_impares n atual
     | n < 0     = False  -- Se ficou negativo, não é quadrado perfeito
     | otherwise = subtrai_impares (n - atual) (atual + 2) 
         -- subtrai o número ímpar atual e passa para o próximo número ímpar
-
--- =========================================== --
-
-main :: IO ()
-main = return ()
