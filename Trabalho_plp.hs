@@ -8,7 +8,7 @@ José Geraldo Caria da Silva - 202410188
 ========================================
 -}
 
-module Main where
+module Trabalho_plp where
 
 -- ===== Exercício 2 ===== --
 
