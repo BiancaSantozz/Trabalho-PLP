@@ -30,7 +30,7 @@ todas_maiusculas (x:xs)
     | num >= 97 && num <= 122 = toEnum (num - 32) : todas_maiusculas xs 
   -- Se "x" for uma letra minúscula, converte para maiúscula subtraindo 32 do valor numérico e adiciona à lista de resultados
     | otherwise = x : todas_maiusculas xs 
-  -- Se "x" não for uma letra minúscula, mantém o caractere original e continua a função recursivamente com o restante da string
+  -- Se "x" não for uma letra minúscula, mantém o caractere original e continua restante da string
   where 
     num = fromEnum x 
   -- converte o caractere "x" para seu valor numérico usando "fromEnum"
