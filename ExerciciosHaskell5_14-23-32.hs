@@ -19,7 +19,7 @@ concatena (x:xs) lista2 = x : concatena xs lista2
 
 -- ===== Exercício 14 ===== --
 
--- recebe lista generica de faz parte da classe Números
+-- recebe lista generica de números
 somatorio :: Num a => [a] -> a
 -- Caso base: lista vazia
 somatorio [] = 0
